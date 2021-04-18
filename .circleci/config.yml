@@ -10,11 +10,11 @@ jobs:
     steps:
       - checkout
       - run:
-	        name: Generate some file
+          name: Generate some file
           command |
             mkdir /home/circleci/project
             echo "echo 'Hello Kapapa!! from a bash script'" > /home/circleci/project/requirements.txt
-	          chmod +x /home/circleci/project/requirements.txt
+            chmod +x /home/circleci/project/requirements.txt
       - python/load-cache
       - python/install-deps
       - python/save-cache
