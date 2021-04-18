@@ -19,4 +19,4 @@ def lambda_handler(event,context):
         return 'Success!'
     except Exception as e:
         print (e)
-        raise e 
+        raise e
