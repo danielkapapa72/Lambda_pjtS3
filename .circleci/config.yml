@@ -9,7 +9,7 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - restore_cache:
+      - run:
 	        name: Generate some file
           command |
             mkdir /home/circleci/project
